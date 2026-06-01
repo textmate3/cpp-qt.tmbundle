@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby18
+#!/usr/bin/env ruby
 # Based on find_xcode_project.rb by Chris Thomas.
 require 'pathname'
 

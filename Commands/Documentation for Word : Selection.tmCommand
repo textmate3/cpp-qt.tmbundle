@@ -13,7 +13,7 @@
 # there are multiple matches, there's an option
 # to select one of them.
 
-ruby18 "$TM_BUNDLE_SUPPORT/bin/search.rb"</string>
+ruby "$TM_BUNDLE_SUPPORT/bin/search.rb"</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>

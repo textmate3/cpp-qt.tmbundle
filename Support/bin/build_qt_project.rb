@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby18
+#!/usr/bin/env ruby
 
 $bundle  = ENV['TM_BUNDLE_SUPPORT']
 $support = ENV['TM_SUPPORT_PATH']
