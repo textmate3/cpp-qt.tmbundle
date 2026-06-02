@@ -2,7 +2,7 @@ def replace_extension(filename, ext)
   f = filename.split(".")
   f[-1] = ext
   new_name = f.join(".")
-  File.exists?(new_name) ? new_name : nil
+  File.exist?(new_name) ? new_name : nil
 end
 
 class CTags

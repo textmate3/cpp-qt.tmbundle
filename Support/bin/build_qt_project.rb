@@ -497,7 +497,7 @@ def parse_errors(name, cmd)
         rfile, no, error = $1, $2, $3
         $num_errors += 1 if error =~ /error/
         file = File.expand_path(rfile, $pwd)
-        if File.exists?(file)
+        if File.exist?(file)
           if error =~ /^\s*(error|warning|info|message)/i
             cssclass = $1
           else
@@ -530,12 +530,12 @@ begin
   $pwd = File.dirname(project)
   Dir.chdir($pwd)
 
-  if not File.exists? "Makefile"
+  if not File.exist? "Makefile"
     # Make sure qmake is in PATH
     parse_errors("Running qmake...", "qmake")
   end
   
-  if File.exists? "Makefile"
+  if File.exist? "Makefile"
     parse_errors("Running make...", "make")
   end
 

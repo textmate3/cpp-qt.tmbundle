@@ -1,6 +1,6 @@
 class Runner
   def self.target(dir = ".")
-    if not File.exists? "#{dir}/Makefile"
+    if not File.exist? "#{dir}/Makefile"
       raise "No Makefile found in #{dir}."
     end
 
